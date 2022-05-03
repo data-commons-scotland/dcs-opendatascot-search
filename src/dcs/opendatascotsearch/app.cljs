@@ -78,6 +78,7 @@
   [:div.container.mx-auto ;; https://umeshmk.github.io/Tailwindcss-cheatsheet/ is a handy cheatsheet for TailwindCSS
    [:div.prose.prose-a:text-blue-600.prose-a:no-underline.hover:prose-a:underline.font-serif.antialiased.leading-snug
     [:h1 "A demo of a simple alternative search over Open Data Scotland's dataset indexes"]
+    [:p "(" [:a {:href "https://campuspress.stir.ac.uk/datacommonsscotland/2022/05/03/a-simple-alternative-search-over-open-data-scotlands-dataset-indexes/"} "Background and rationale"] ")"]
     [:p.text-xl.text-indigo-700.font-bold "Type words (of three or more letters)"]
     [:input {:type          :text
              :placeholder   "Search... (type words of three or more letters)"
