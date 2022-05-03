@@ -1,0 +1,13 @@
+{:deps   true
+ :builds {:app {:target           :browser
+                :output-dir       "public/js"
+                :asset-path       "/js"
+                :compiler-options {:externs ["externs.js"]}
+
+                :modules          {:dcs-opendatascotsearch-app ;; <- becomes public/js/dcs-opendatascotsearch-app.js
+                                   {:entries [dcs.opendatascotsearch.app]}}
+
+                      ;; start a development http server on http://localhost:8020
+                :devtools         {:http-root "public"
+                                   :http-port 3000}
+                }}}

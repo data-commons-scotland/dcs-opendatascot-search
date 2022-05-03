@@ -1,0 +1,32 @@
+= An app which demos a simple alternative search over Open Data Scotland's indexes
+
+This is an app which demos a simple, useful alternative to the JKAN search on the Open Data Scotland website.
+Its aim is to better support exploratory searches.
+
+== Building and running
+
+[bash]
+----
+
+# Install any npm controlled libs (probably need to firstly run: shadow-cljs compile app )
+npm install
+
+# To make shadow-cljs directly available on to the command line...
+#     npm install shadow-cljs
+
+# Compile a build once and exit
+shadow-cljs compile app
+
+# Compile and watch (the resulting webapp will be at http://localhost:3000 )
+shadow-cljs watch app
+
+# Connect to REPL for the build (available while watch is running)
+shadow-cljs cljs-repl app
+
+# Build a release-build that is optimized for production use
+shadow-cljs release app
+
+# Then run it
+python3 -m http.server 3000 --directory public
+----
+
